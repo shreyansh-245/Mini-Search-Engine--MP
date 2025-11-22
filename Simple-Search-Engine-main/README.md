@@ -1,47 +1,52 @@
 # Simple-Search-Engine
- The Simple Search Engine project is a lightweight yet powerful tool designed to provide efficient text search capabilities. this project allows users to search through a corpus of documents and obtain relevant result.
-The Vector Space Model (VSM) is a crucial concept in Natural Language Processing (NLP) used to represent text data numerically in a high-dimensional space. This project implements a search engine using the VSM approach, allowing users to retrieve relevant information from a given corpus.
+The Simple Search Engine is a lightweight yet effective application designed to perform fast and accurate text-based searches. It enables users to search within a collection of documents and retrieve the most relevant results using the Vector Space Model (VSM) — a foundational technique in Natural Language Processing (NLP) that transforms text into numerical vectors in a multi-dimensional space.
 
-## Description
+Overview
 
-This search engine project involves several key steps:
+This project demonstrates how to build a basic search engine from scratch using VSM for information retrieval. It systematically processes text data, represents it mathematically, and identifies documents closely related to a given user query through cosine similarity.
 
-### Step 0: Importing Corpus
+Project Workflow
+Step 0 — Load the Corpus
 
-The initial step involves reading text corpora from the local machine. The Python script utilizes the NLTK library for further processing.
+Text documents stored locally are imported into the project environment. The NLTK library is used in later stages for linguistic processing.
 
-### Step 1: Preprocessing & Tokenizing
+Step 1 — Preprocessing & Tokenization
 
-Text preprocessing is carried out to eliminate unnecessary tokens and simplify calculations. The NLTK library is employed for tasks such as tokenization, lemmatization, and stop-word removal.
+The text is cleaned and normalized by:
 
-### Step 2: Creating our Dataset
+Tokenizing content
 
-The preprocessed data is organized into a CSV file, creating a structured dataset for subsequent analysis.
+Lemmatizing words
 
-### Step 3: Creating our Matrix
+Removing stop words
+This ensures simplified and meaningful representation for analysis.
 
-A term-document matrix is generated from the dataset, representing the frequency of terms in each document.
+Step 2 — Dataset Creation
 
-### Step 5: Calculating Cosine Similarity
+The processed text data is compiled and stored in a CSV file, forming a structured dataset.
 
-Cosine similarity is computed to measure the similarity between the input query and the documents in the corpus. The results are ranked based on similarity.
+Step 3 — Matrix Construction
 
-## How to Use
+A term-document matrix is generated to represent how frequently each term appears in each document.
 
-1. Clone the repository to your local machine.
-2. Install the necessary dependencies (NLTK, pandas).
-3. Run the Python script to build the search engine.
+Step 4 — Cosine Similarity Calculation
 
-## Dependencies
+Cosine similarity is applied to measure how closely the query matches each document. The documents are then ranked based on similarity scores.
 
-- NLTK
-- Pandas
+Usage Instructions
 
-## Author
+Clone the repository.
 
-[Kiarash Rahmani]
+Install required dependencies (NLTK, Pandas).
 
-## License
+Execute the main Python script to build and run the search engine.
 
-This project is licensed under the [MIT License](LICENSE).
+Dependencies
 
+NLTK
+
+Pandas
+
+Author
+
+Shreyansh Gupta
